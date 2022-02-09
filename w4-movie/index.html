@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jake Barker">
+    <meta name="description" content="">
+    <title>The Lord of The Rings: The Fellowship of The Ring</title>
+
+    <!--in-document styling below-->
+    <style>
+        /*we write CSS in here*/
+
+        div {/*applies to every div in the page*/
+            border:1px solid black;
+            padding:10px; /*top, right, bottom, left*/ 
+            margin:5px; /*top, right, bottom, left*/ 
+
+        }
+
+        
+        #wrapper {/*this applies onlt ot the element with the ID of "wrapper"*/
+            width:900px;
+            margin:auto; /*adds equal space to left and right sides only*/
+
+        }
+
+        .border {/*. denotes a class; all elements with a class of "border"*/
+            border:1px solid blue;
+            margin-bottom: 10px;/*can apply side specifications of -top, -right, -bottom*/
+
+                  }
+    </style>
+    
+ </head>
+<body>
+
+    <!--wrapper - holds the entire page content-->
+    <div id="wrapper">
+
+        
+
+    
+
+        <!--nav - holds links to internal pages-->
+        <div id="nav" class="border">
+
+            <a href="index.html" class="link">Home</a>
+            <a href="cast.html" class="link">Cast</a>
+            <a href="review.html" class="link">Review</a>
+
+    
+        
+
+    </div><!--/ #nav-->
+    <div id="content" class="border bg-main">
+
+        <h2>Home</h2>
+            <p> The Lord of The Rings is a trilogy of films which brings J. R. R. Tolkien's novels to the big screen. The Fellowship of the Ring starts this journey. This story takes place in a fantasy world called <i>Middle Earth</i>. Ancient evil has returned to Middle Earth to regain his power and end the era of mankind. It is up to the people of Middle Earth to unite and stop this devilry.</p>
+
+            <img src="images/lotr poster.jpg" alt="lotr">
+
+        <div class="info">
+            <label for="info"> <b>Company Credits:</b> New Line Cinema WingNut Films</label> <br>
+            <label for="info"> <b>Release Date:</b>December 19th, 2001</label> <br>
+            <label for="info"> <b>Genres:</b>Fiction, Action Adventure, Fantasy</label> <br>
+            <label for="info"> <b>Rating:</b>8.8/10 - 1.8M User Ratings</label> <br>
+            <label for="info"> <b>Running Time:</b>2 Hours and 58 Minutes</label> <br>
+
+    
+   
+    </div><!--/ #header-->
+    </hr size="10"> 
+    <div id="footer" class="border bg-main">
+
+        <a href="index.html">Back to Top</a>
+    
+        <p>&copy; 2022, J BARKER | SE111.02</p>
+    </div>
+</div>
+</body>
+</html>
