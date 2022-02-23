@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jake Barker">
+    <meta name="description" content="Week 6 JS Intro">
+    
+    <title>Week 6 | JS Intro</title>
+
+</head>
+<body>
+
+    <h1>Week 6  | Javascript</h1>
+
+    <script>
+
+        
+        var hrsWorked = 0
+        var hrlyPay = 0
+        var grsPay = 0
+        var uncSam = 0
+        var netPay = 0
+    
+       
+
+        hrsWorked =prompt("Enter Hours Worked:") * 2
+        console.log(`Work Hours is ${hrsWorked}`)
+        hrlyPay =prompt("Enter Your Hourly Rate:")
+        console.log(`Hourly Rate is ${hrlyPay}`)
+        grsPay = (hrsWorked * hrlyPay).toFixed(2)
+        uncSam = (grsPay * 0.2).toFixed(2)
+        netPay = (grsPay - uncSam).toFixed(2)
+        console.log(`Gross Pay is ${grsPay}, tax is ${uncSam}, Net Pay is ${netPay}`)
+        alert(`$Your Gross Pay is ${grsPay}\n$ The Government's Take is ${uncSam}\n$ Your Net Pay is ${netPay}$`)
+
+
+
+    </script> 
+ </head>
+ </html>   
+
+        
+
+
+
+
+
+
