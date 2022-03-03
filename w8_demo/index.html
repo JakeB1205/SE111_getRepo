@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W8 JS Demo</title>
+</head>
+<body>
+
+    <h1>W8D2 - Javascript Arrays and Objects</h1>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        //create a new populated array
+        var people = [
+            `Katie`,  //people[0]
+            `Jake`,   //people[1]
+            `Spencer`, //people[2]
+            `Dan`,   //people[3]
+            `Joe`,   //people[4]
+        ]
+
+        console.log(people)
+        console.log(people[3])
+        console.log(`There are ${people.length} values in the people array`)
+
+        //arrayName + index (arrayName[#]) is the same as a singular variable\
+
+        //add another value to the people array
+        people[5] = `John`
+        console.log(people)
+
+        people.push( //just like append() in python!
+            prompt(`Enter a name to be added: `)
+        )
+        console.log(people)
+            
+        var colors = [//a parallel array to people; connected data(data that belongs)
+            `grey`,
+            `blue`,
+            `red`,
+            `black`,
+        
+
+        console.log(`${people[5]}'s favorite color is ${colors[5]}`)
+
+        //create an emtpy array
+        var htmlClass = []
+
+        //process the entire array set at once
+        //ARRAY PROCESSING --> FOR LOOP (standard)
+        for(let index = 0; index < people.length; index++)
+        {
+            //below occurs to EVERY value in the array
+            console.log(`${people[index]}'s favorite color is ${colors[index]}`)
+            class_.push(`SE11.02`)
+
+        }
+
+        console.log(${people[3]})
+
+
+
+
+        //create a new object
+        var person1 = {
+            first: `Katie`,
+            last: `Truchon`,
+            hasPets: true,
+            height: 64,
+            classes: [`SE111`, `VGD129`, `GMW251`],
+            pets: {dogs: [`George`, `Marlow`], cats: [`Jack`]},
+            greeting: function(){alert(`Hi there ${this,first} ${this.last}!`)}
+        }
+
+        console.log(person1)
+        console.log(person1.height)
+        console.log(person1.classes)
+        console.log(person1.classes[0])
+        console.log(person1.dogs.pets[1])
+        console.log()
+
+        //objects use the for loop
+        for(let key in person1)
+        {//declare block var name for key/property placeholder within the objectName; for as many keys in person1 object, this loop will run
+            console.log(`${key}: ${person1[key]}`) //displays key name as well as value assigned to key within the object
+
+
+
+        }
+
+        //w8 assignment notes
+
+        //create an array populaated with objects
+        var humans = [
+            person1, //yes, you populate with previously stored data 
+            person2
+        ]
+
+        var person3 = {
+            first: `Cam`,
+            last: `Arbo`,
+            age: 27,
+            height: 70,
+            classes: [`SE111`],
+            pets: {dogs: [`Thor`, `Valkyrie`]}
+        }
+
+        //add new object to the array
+        humans.push(person3)//humans[3] = person3
+
+        //in order to process a data structure populated with data structures ..... we need LOOP CEPTIOM
+        for(let i = 0; i < humans.length; i++)
+        {//this outter loop moves through the different values of the array; since these values are objects we need a second loop ....
+            console.log(`<h3>INFO FOR ${humans[i].first}
+            :</h3>`
+
+            for(let key in humans[i])
+            {//this loop displays each key+value pair within the object (humans[i])
+                output += `<p><b>${key.toUpperCase()}</b>: ${humans[i][key]}</p>`
+            
+            }
+
+            output += `<hr>`
+
+        }
+
+        //adds new string to the display
+
+        document.querySelector(`#output`),innerHTML = output
+
+
+        
+
+
+
+
+    </script>
+
+</body>
+</head>
